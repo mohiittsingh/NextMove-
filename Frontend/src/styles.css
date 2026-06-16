@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111111;
+  background: #050505;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.login-map-grid {
+  background-color: #050505;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 52% 48%, rgba(255, 255, 255, 0.14), transparent 28%),
+    linear-gradient(130deg, rgba(255, 255, 255, 0.08), transparent 45%);
+  background-size: 64px 64px, 64px 64px, 100% 100%, 100% 100%;
+  filter: blur(0.2px);
+}
+
+.location-spinner {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  border-top-color: #111111;
+  border-radius: 999px;
+  animation: spin 0.8s linear infinite;
+}
+
+.admin-spinner {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #34d399;
+  border-radius: 999px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  opacity: 0.76;
+}
+
+.pulse-marker {
+  width: 22px;
+  height: 22px;
+  border: 4px solid #ffffff;
+  border-radius: 999px;
+  background: #111111;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.12);
+}
+
+.bus-marker {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 3px solid #111111;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+  display: grid;
+  place-items: center;
+}
+
+.bus-marker img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.nextmove-user-marker {
+  width: 24px;
+  height: 24px;
+  border: 4px solid #ffffff;
+  border-radius: 999px;
+  background: #111111;
+  box-shadow: 0 0 0 9px rgba(255, 193, 7, 0.22), 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.nextmove-bus-marker {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #111111;
+  border-radius: 999px;
+  background: #ffc107;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
+  display: grid;
+  place-items: center;
+}
+
+.nextmove-bus-marker img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.nextmove-bus-marker-live {
+  animation: live-bus-pulse 1.6s ease-in-out infinite;
+}
+
+.driver-stop-marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 3px solid #111111;
+  background: #f5f5f5;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.24);
+}
+
+.driver-stop-marker-active {
+  background: #facc15;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.26), 0 0 0 10px rgba(250, 204, 21, 0.16);
+}
+
+@keyframes live-bus-pulse {
+  0%,
+  100% {
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22), 0 0 0 0 rgba(255, 193, 7, 0.48);
+  }
+
+  50% {
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22), 0 0 0 12px rgba(255, 193, 7, 0);
+  }
+}

@@ -1,0 +1,40 @@
+
+> next-move-final@0.1.0 dev
+> vite --host 127.0.0.1 --port 5173
+
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.3.2[39m  [2mready in [0m[1m1078[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m11:08:28 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m11:08:28 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m1:49:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mFrontend/index.html[22m
+[2m1:49:45 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m1:49:45 am[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m1:49:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m1:49:45 am[22m [36m[1m[vite][22m[39m server restarted.
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: The following dependencies are imported but could not be resolved:
+
+  [36mreact[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/components/TransportOptions.jsx)[22m[31m
+  [36mreact-dom/client[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/main.jsx)[22m[31m
+  [36mreact-router-dom[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/pages/DriverDashboard.jsx)[22m[31m
+  [36mframer-motion[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/components/BusList.jsx)[22m[31m
+  [36mmapbox-gl/dist/mapbox-gl.css[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/components/LiveTracking.jsx)[22m[31m
+  [36mmapbox-gl[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/components/LiveTracking.jsx)[22m[31m
+  [36mrecharts[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/pages/RouteDetails.jsx)[22m[31m
+  [36mzustand[31m [37m[2m(imported by E:/COLLEGE DOCS AND FILES/PT2/next-move-final/src/store/useDriverStore.js)[22m[31m
+
+Are they installed?
+    at file:///E:/COLLEGE%20DOCS%20AND%20FILES/PT2/next-move-final/node_modules/vite/dist/node/chunks/config.js:31907:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///E:/COLLEGE%20DOCS%20AND%20FILES/PT2/next-move-final/node_modules/vite/dist/node/chunks/config.js:34115:15[39m
+[2m1:50:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mNew folder/index.html[22m
+[2m1:50:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mFrontend/index.html[22m
+[2m1:51:09 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m1:51:09 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m1:51:09 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mNew folder/index.html[22m
+[2m1:51:09 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m1:52:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mz_frontend/dist/index.html[22m
